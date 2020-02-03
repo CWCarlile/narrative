@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>existential crisis</title>
+     <script src="js/script.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+     <script type="text/javascript" src="processing.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+</head>
+
+<style>
+ html,
+body {
+  height: 100%;
+  overflow: hidden;
+    background:black;
+cursor:wait;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 600px;
+  max-height: 900px;
+  height: 100%;
+cursor:wait;
+}
+
+::scrollbar {
+  display: none;
+}
+
+
+    body {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+    
+    
+   .braceface {
+       position: fixed;
+       -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+    @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+   
+    .birthdayhat {
+        position: absolute;
+        left: 100px;
+  top: 150px;
+       -webkit-animation-name: spinmove;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+         x-transition: all 1s ease-in-out;
+  animation: spinmove 1.7s infinite;
+         }
+     @keyframes spinmove {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+         0% {
+    left: 0;
+  }
+  50% {
+    left: 720px;
+  }
+  100% {
+    left: 0;
+  }
+}
+    
+    .cowboyhat {
+        position: absolute;
+        left: 100px;
+  top: 150px;
+       -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+         x-transition: all 1s ease-in-out;
+  animation: spin 1.7s infinite;
+         }
+    
+.flowers {position: absolute;
+        right: 100px;
+  top: 260px;
+         }
+    
+    .butterfly {
+        position:absolute;
+        left:-300px;
+  top: 10px;
+         -webkit-animation-name: pollinate;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: pollinate;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: pollinate;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+         x-transition: all 1s ease-in-out;
+  animation: pollinate 6s infinite;
+    }    
+    
+    @keyframes pollinate {
+     0% {
+    left: -300;
+  }
+       75% {top:140px;}
+        75% {left:600px;}
+  100% {
+    left: 1245px;
+  }
+  
+    }
+
+.one {
+  background: black;
+}
+.two {
+ 
+}
+.three {
+  background: black;
+     position: relative;
+  text-align: center;
+  min-height: 745px;
+  max-height: 900px;
+  height: 100%;
+}
+.four {
+
+}
+    .five {
+  background: black;
+}
+      .six {
+ 
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 80px;
+  letter-spacing: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}   
+    
+    
+</style>
+<body>
+   
+
+   
+   <main class="Loop js-loop">
+  
+  <section class="one">
+    <div><img class="braceface" src="/images/braceface.png" alt="Brace Face" width="460" height="345"> </div>
+    <h1>What</h1>
+  </section>
+  <section class="two">
+    <h1>is</h1>
+     <div><img class="birthdayhat" src="/images/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" > </div>
+  </section>
+  
+   
+   <section class="three">
+    <h1>the</h1>
+     <div><img class="butterfly" src="/images/butterfly.png" alt="butterfly" width="25%" > 
+   <img class="flowers" src="/images/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" > 
+
+   </div>
+    </section>
+  
+   
+   <section class="four">
+    <h1>meaning</h1>
+  </section>
+  <section class="five">
+   <div><img class="cowboyhat" src="/images/218-2182854_white-cowboy-hat-png-transparent-png.png.jpeg" alt="birthdayhat" width="25%" > </div>
+    <h1>of</h1>
+  </section>
+  
+  <section class="six">
+   
+    <h1>this</h1>
+    <canvas data-processing-sources="trianglebounce.pde"></canvas>
+  </section>
+  <section class="seven">
+    <h1 class="message">this</h1>
+    <script>
+$(document).ready(function(){
+  $(".seven").hover(function(){
+    alert("You give it meaning");
+  },
+  function(){
+    alert("pay attention to what you give attention");
+  }); 
+});
+</script>
+  </section>
+  <section class="eight">
+    <h1>this</h1>
+  </section>
+  <section class="nine">
+    <h1>this</h1>
+  </section>
+  <section class="ten">
+   <canvas data-processing-sources="trianglebounce.pde"></canvas>
+    <h1>this</h1>
+    
+  </section>
+  <section class="eleven">
+    <h1>this</h1>
+  </section>
+  <section class="twelve">
+    <h1>this</h1>
+  </section>
+  <section class="thirteen">
+    <h1>this</h1>
+  </section>
+  
+  
+  
+   
+  
+</main>
+    
+</body>
+
+</html>
