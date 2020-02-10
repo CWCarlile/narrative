@@ -13,15 +13,14 @@
 
 
 <body>
-   <main class="Loop js-loop">
   
-  <section class="one">
+   <main class="Loop js-loop">
+   <section class="one">
     <div><img class="braceface" src="/img/braceface.png" alt="Brace Face" width="460" height="345"> </div>
     <h1>What</h1>
   </section>
   <section class="two">
     <h1>is</h1>
-     <div><img class="birthdayhat" src="/img/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" > </div>
   </section>
   
    
@@ -37,8 +36,11 @@
     <h1>meaning</h1>
   </section>
   <section class="five">
-   <div><img class="cowboyhat" src="/img/218-2182854_white-cowboy-hat-png-transparent-png.png.jpeg" alt="birthdayhat" width="25%" > </div>
-    <h1>of</h1>
+   <div><img class="cowboyhat" src="/img/218-2182854_white-cowboy-hat-png-transparent-png.png.jpeg" alt="birthdayhat" width="25%" >
+      </div>
+      <div><img class="birthdayhat" src="/img/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" >
+    </div>
+   <h1>of</h1>
   </section>
   
   <section class="six">
@@ -48,22 +50,11 @@
   </section>
   <section class="seven">
     <h1 class="message">this</h1>
-<!--
-    <script>
-$(document).ready(function(){
-  $(".seven").hover(function(){
-    alert("You give it meaning");
-  },
-  function(){
-    alert("pay attention to what you give attention");
-  }); 
-});
-</script>
--->
   </section>
   <section class="eight">
     <h1>this</h1>
-    <div><img class="maincloud" src="/img/cloud-hd-png-clouds-png-hd-1024.png" alt="maincloud" width="100%" > </div>
+    <div><img class="maincloud" src="/img/cloud-hd-png-clouds-png-hd-1024.png" alt="maincloud" width="100%" >
+      </div>
     <div><img class="littlecloud" src="/img/cloud-transparent-png-0.png" alt="littlecloud" width="100%" > </div>
   </section>
   <section class="nine">
@@ -71,7 +62,53 @@ $(document).ready(function(){
   </section>
   <section class="ten">
 <h1>this</h1>
-    
+    <div id="bee"> 
+  <img src="/img/butterfly.png" width="100%">
+  <script>var bee = document.getElementById("bee");
+		document.addEventListener("mousemove", getMouse); 
+
+
+		bee.style.position = "absolute"; //css		
+		var beepos = {x:0, y:0};
+
+		setInterval(followMouse, 50);
+		
+		var mouse = {x:0, y:0}; //mouse.x, mouse.y
+		
+		var dir = "right";
+		function getMouse(e){
+			mouse.x = e.pageX;
+			mouse.y = e.pageY;
+        //Checking directional change
+        if(mouse.x > beepos.x){
+          dir = "right";
+        } else {
+          dir = "left";
+        }
+		}
+		
+		function followMouse(){
+			//1. find distance X , distance Y
+			var distX = mouse.x - beepos.x;
+			var distY = mouse.y - beepos.y;
+			//Easing motion
+       //Progressive reduction of distance 
+			beepos.x += distX/5;
+			beepos.y += distY/2;
+			
+			bee.style.left = beepos.x + "px";
+			bee.style.top = beepos.y + "px";
+      
+      
+        //Apply css class 
+        if (dir == "right"){
+          bee.setAttribute("class", "right");
+        } else {
+          bee.setAttribute("class", "left");        
+        }
+			
+		}</script>
+</div>
   </section>
   <section class="eleven">
     <h1>this</h1>

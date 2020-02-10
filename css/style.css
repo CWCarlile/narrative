@@ -19,7 +19,7 @@ section {
   min-height: 600px;
   max-height: 900px;
   height: 100%;
-cursor:wait;
+cursor:;
 }
 
 ::scrollbar {
@@ -62,7 +62,7 @@ cursor:wait;
    
     .birthdayhat {
         position: absolute;
-        left: 100px;
+        left:900px;
   top: 150px;
        -webkit-animation-name: spinmove;
   -webkit-animation-duration: 4000ms;
@@ -88,13 +88,13 @@ cursor:wait;
         transform:rotate(360deg);
     }
          0% {
-    left: 0;
+    right: 0px;
   }
   50% {
-    left: 720px;
+    top: -40px;
   }
   100% {
-    left: 0;
+    right: 0;
   }
 }
     
@@ -226,4 +226,52 @@ h1 {
   100% {
     left: 1000px;
   }
+}
+
+
+.left {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s}
+
+
+
+.zoom{
+	overflow: hidden;
+	padding-bottom: 55%;
+}
+.zoom img{
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	max-width: 150%;
+	transform: translateX(-50%);
+	/* Thanks  @bastian_fiessinger. Use when activating blur effect:
+	will-change: -webkit-filter, filter, transform; */
+}
+@media (max-width: 667px) {
+	h1{
+		font-size: 1.8rem;
+		line-height: 2.6rem;
+		text-align: left;
+	}
+	
+	.zoom{
+		overflow: hidden;
+		padding-bottom: 75%;
+	}
+
 }
