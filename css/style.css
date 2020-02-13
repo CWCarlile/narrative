@@ -3,7 +3,7 @@ body {
   height: 100%;
   overflow: hidden;
     background:black;
-cursor: help;
+cursor: crosshair;
 }
 
 .Loop {
@@ -19,7 +19,7 @@ section {
   min-height: 600px;
   max-height: 900px;
   height: 100%;
-cursor:crosshair;
+
 }
 
 ::scrollbar {
