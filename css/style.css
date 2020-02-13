@@ -145,6 +145,11 @@ html, body {
   top: 260px;
          }
     
+.flowersagain {position: absolute;
+        right:300px;
+  top: 470px;
+         }
+
     .butterfly {
         position:absolute;
         left:-300px;
@@ -370,8 +375,3 @@ letter-spacing: 10px;
 
 }
 
-
-.flowersagain {position: absolute;
-        right:300px;
-  top: 470px;
-         }
