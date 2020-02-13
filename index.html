@@ -3,121 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>existential crisis</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-     <script src="js/script.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
-     <script type="text/javascript" src="processing.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100&display=swap" rel="stylesheet">
+   
+     
 </head>
 
 
 <body>
+   <div id="bee"> 
+  <img src="img/butterfly.png" width="100%">
+      </div>
   
    <main class="Loop js-loop">
    <section class="one">
-    <div><img class="braceface" src="/img/braceface.png" alt="Brace Face" width="460" height="345"> </div>
-    <h1>What</h1>
+   <canvas class="canvas" data-processing-sources="trianglebounce.pde"></canvas>
+    <h1>Scroll Down</h1>
   </section>
   <section class="two">
-    <h1>is</h1>
+    <h1></h1>
+    
   </section>
   
    
    <section class="three">
-    <h1>the</h1>
-     <div><img class="butterfly" src="/img/butterfly.png" alt="butterfly" width="25%" > 
-   <img class="flowers" src="/img/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" > 
-   </div>
-    </section>
+    <h1>earth</h1>
+    <div class="zoomin">
+    <img src="img/Earth%20Transparent.png" width="25%" alt="image">
+      </div>
+ 
+  </section>
   
    
    <section class="four">
-    <h1>meaning</h1>
-  </section>
-  <section class="five">
-   <div><img class="cowboyhat" src="/img/218-2182854_white-cowboy-hat-png-transparent-png.png.jpeg" alt="birthdayhat" width="25%" >
+    <h1></h1>
+    
+    <div><img class="maincloud" src="img/cloud-hd-png-clouds-png-hd-1024.png" alt="maincloud" width="100%" >
       </div>
-      <div><img class="birthdayhat" src="/img/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" >
-    </div>
-   <h1>of</h1>
+      <div><img class="littlecloud" src="img/cloud-transparent-png-0.png" alt="littlecloud" width="100%" > </div>
+      <div><img class="othermaincloud" src="img/cloud-hd-png-clouds-png-hd-1024%20copy.png" alt="maincloud" width="100%" >
+      </div>
+    
+    </section>
+  <section class="five">
+   
+  
+   
+   <h1>i live here</h1>
   </section>
   
   <section class="six">
+ 
+    <p>I love it here<p>
    
-    <h1>this</h1>
-    <canvas data-processing-sources="trianglebounce.pde"></canvas>
   </section>
   <section class="seven">
-    <h1 class="message">this</h1>
+   
+   <div><img class="butterfly" src="img/butterfly.png" alt="butterfly" width="25%" > 
+   <img class="flowers" src="img/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" > 
+   </div>
+    <h1 class="message">so do my friends</h1>
   </section>
+  
+  
   <section class="eight">
-    <h1>this</h1>
-    <div><img class="maincloud" src="/img/cloud-hd-png-clouds-png-hd-1024.png" alt="maincloud" width="100%" >
-      </div>
-    <div><img class="littlecloud" src="/img/cloud-transparent-png-0.png" alt="littlecloud" width="100%" > </div>
+    <h1>but <br> humans are strange</h1>
+    
   </section>
   <section class="nine">
-    <h1>this</h1>
+    <h1>They make no sense</h1>
   </section>
   <section class="ten">
-<h1>this</h1>
-    <div id="bee"> 
-  <img src="/img/butterfly.png" width="100%">
-  <script>var bee = document.getElementById("bee");
-		document.addEventListener("mousemove", getMouse); 
+<h1>what is this?</h1>
+   <div><img class="cowboyhat" src="img/218-2182854_white-cowboy-hat-png-transparent-png.png.jpeg" alt="birthdayhat" width="25%" >
+      </div>
+      <div><img class="birthdayhat" src="img/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" >
+    </div>
 
-
-		bee.style.position = "absolute"; //css		
-		var beepos = {x:0, y:0};
-
-		setInterval(followMouse, 50);
-		
-		var mouse = {x:0, y:0}; //mouse.x, mouse.y
-		
-		var dir = "right";
-		function getMouse(e){
-			mouse.x = e.pageX;
-			mouse.y = e.pageY;
-        //Checking directional change
-        if(mouse.x > beepos.x){
-          dir = "right";
-        } else {
-          dir = "left";
-        }
-		}
-		
-		function followMouse(){
-			//1. find distance X , distance Y
-			var distX = mouse.x - beepos.x;
-			var distY = mouse.y - beepos.y;
-			//Easing motion
-       //Progressive reduction of distance 
-			beepos.x += distX/5;
-			beepos.y += distY/2;
-			
-			bee.style.left = beepos.x + "px";
-			bee.style.top = beepos.y + "px";
-      
-      
-        //Apply css class 
-        if (dir == "right"){
-          bee.setAttribute("class", "right");
-        } else {
-          bee.setAttribute("class", "left");        
-        }
-			
-		}</script>
-</div>
   </section>
   <section class="eleven">
-    <h1>this</h1>
+    <h1><br><br><br><br><br><br><br>what are they going to do with this?</h1>
+    <div> <img class="computer junk" src="img/Computer%20Junk%20Transparent.png" width="100%"></div>
+    
   </section>
   <section class="twelve">
-    <h1>this</h1>
+    <h1>they are boring <br> and wasteful</h1>
   </section>
   <section class="thirteen">
-    <h1>this</h1>
+   
+    
+    <img class="flowersagain" src="img/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" >
+    <h1>I am happy to <br>have my flowers</h1> 
   </section>
   
   
@@ -125,7 +102,12 @@
    
   
 </main>
+    <script type="text/javascript" src="processing.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
+     <script src="js/script.js"></script>
 </body>
 
 </html>

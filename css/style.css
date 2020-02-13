@@ -3,7 +3,7 @@ body {
   height: 100%;
   overflow: hidden;
     background:black;
-cursor:wait;
+cursor: help;
 }
 
 .Loop {
@@ -19,7 +19,7 @@ section {
   min-height: 600px;
   max-height: 900px;
   height: 100%;
-cursor:;
+cursor:crosshair;
 }
 
 ::scrollbar {
@@ -28,12 +28,32 @@ cursor:;
 
 
     body {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Be Vietnam';
   font-weight: normal;
   font-size: 100%;
 }
 
     
+html, body {
+  position: relative;
+  margin: 0;
+  height: 1500px;
+}
+
+ .zoomin img {
+      height: 500px;
+      width: 500px;
+      -webkit-transition: all 5s ease;
+      -moz-transition: all 5s ease;
+      -ms-transition: all 5s ease;
+      transition: all 5s ease;
+    }
+    .zoomin img:hover {
+      width: 800px;
+      height: 800px;
+    }
+
+
     
    .braceface {
        position: fixed;
@@ -62,7 +82,7 @@ cursor:;
    
     .birthdayhat {
         position: absolute;
-        left:900px;
+        left:800px;
   top: 150px;
        -webkit-animation-name: spinmove;
   -webkit-animation-duration: 4000ms;
@@ -158,10 +178,21 @@ cursor:;
   
     }
 
-.one {
-  background: black;
+.canvas {
+  background: background: black;
+     position: relative;
+  text-align: right;
+  min-height: 745px;
+  max-height: 900px;
+  height: 100%;
+    width:100%;
 }
-.two {
+.two {background: black;
+     position: relative;
+  text-align: center;
+  min-height: 745px;
+  max-height: 900px;
+  height: 100%;
  
 }
 .three {
@@ -172,11 +203,16 @@ cursor:;
   max-height: 900px;
   height: 100%;
 }
-.four {
+.four {background: black;
+     position: relative;
+  text-align: center;
+  min-height: 745px;
+  max-height: 835px;
+  height: 100%;
 
 }
     .five {
-  background: black;
+  
 }
       .six {
  
@@ -186,22 +222,34 @@ h1 {
   margin: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-size: 80px;
-  letter-spacing: 10px;
+    text-align: left;
+    right:-100px;
+     width: 100%;
+  font-size: 30px;
+  letter-spacing: 20px;
   color: #fff;
-  text-transform: uppercase;
+letter-spacing: 10px;
+    text-transform: uppercase;
+} 
+
+p {position: absolute;
+  top: 50%;
+    text-align: right;
+    right:100px;
+text-decoration:underline;
+
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 20px;
+  color: #fff;
+letter-spacing: 10px;
+    text-transform: uppercase;
 } 
 
 .maincloud {
-     position:absolute;
-    right:-125px;
-        }
-
-.littlecloud {
-    position:absolute;
- left:100px;
+     position:relative;
+    right:-px;
+   top:-200px;
     -webkit-animation-name: cloudmove;
   -webkit-animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
@@ -215,18 +263,61 @@ h1 {
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
   -o-transition: rotate(3600deg);
-  animation: cloudmove 20s infinite;
-    }    
+  animation: cloudmove 10s infinite;
+        }
+
+.littlecloud {
+    position:absolute;
+ left:100px;
+    top:0px;
+   
+    }   
+
+.othermaincloud {
+     position:relative;
+    right:-px;
+   top:-600px;
+    -webkit-animation-name: othercloudmove;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cloudmove;
+  -moz-animation-duration: 200s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: cloudmove;
+  -ms-animation-duration: 200s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+  animation: othercloudmove 10s infinite;
+        }
     
 
 
 @keyframes cloudmove {
-     0% {left: -300px;}
+     0% {left: -50px;
+    transform:translate(0, 0)}
+    
+    50% {right: 50px;}
       
   100% {
-    left: 1000px;
+    left: -50px;
+      transform: translate(20px, 50px)
   }
 }
+@keyframes othercloudmove {
+     0% {left: 10px;
+     transform:translate(10px, 10px)}
+   
+    75% {right:0px}
+      
+  100% {
+    left: 10px;
+      transform: translate(0px, 0px)
+  }
+}
+
 
 
 .left {
@@ -245,7 +336,10 @@ h1 {
         filter: FlipH;
         -ms-filter: "FlipH";
 }
-#bee {transition: transform .1s}
+#bee {transition: transform .1s;
+     position:relative;
+    
+}
 
 
 
@@ -275,3 +369,9 @@ h1 {
 	}
 
 }
+
+
+.flowersagain {position: absolute;
+        right:300px;
+  top: 470px;
+         }
